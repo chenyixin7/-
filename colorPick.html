@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by zhuwenlong (http://jsbin.com/wibaf/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <title>JS Bin</title>
+</head>
+<body>
+  <p>1.select color and change background</p>
+  <p>
+    <input type="color" id="bgcolor" value="#00ff00" oninput="changeBg(bgcolor.value)">
+  </p>
+  <p>
+    2.select color form the list
+  </p>
+  <p>
+  <input type="color" list="colors">
+  <datalist id="colors">
+    <option>#ffffff</option>
+    <option>#ff0000</option>
+    <option>#ff7700</option>
+    <option>#7700ff</option>
+  </datalist>
+  </p>
+<script>
+function changeBg(color){
+  document.body.style.backgroundColor=color
+
+}
+</script>
+<script src="http://static.jsbin.com/js/render/edit.js?4.1.8"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"http://static.jsbin.com","root":"http://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
